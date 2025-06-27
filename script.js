@@ -1,18 +1,23 @@
 
+// Create object with 3 products
 const products = {
   '1': { id: 1, name: 'smartBand', price: 500 },
   '2': { id: 2, name: 's23Ultra', price: 700 },
   '3': { id: 3, name: 'AirPodsMax', price: 200 },
 };
 
-
+// Convert object to Set
 const setProducts = new Set(Object.values(products));
+
+
+// Create a Map for categories
 const category = new Map();
 
 category.set("cellPhones", "products1");
 category.set('smartWatch', "products2");
 category.set('AirPods', "products3");
 
+// Show Object products using for in
 const productCatalog = document.getElementById('product-catalog');
 
 for (let nameProduct in products) {
@@ -25,7 +30,7 @@ for (let nameProduct in products) {
   productCatalog.appendChild(productCard);
 }
 
-
+// Show Set products using for of
 const productSet = document.getElementById('product-set');
 
 for (let product of setProducts) {
@@ -42,6 +47,8 @@ for (let product of setProducts) {
   productSet.appendChild(setProductCard);
 }
 
+
+// Show Map categories using forEach
 const categoryMapping = document.getElementById('category-mapping');
 
 category.forEach((value, key) => {
