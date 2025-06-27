@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>JavaScript Iteration Methods</title>
+  
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Iteration Methods</h1>
+            <p>Exploring different ways to iterate through data structures</p>
+        </header>
+
+        <section class="iteration-section for-in">
+            <div class="section-header">
+                <h2 class="section-title">Object</h2>
+            </div>
+            <p class="section-description">
+                Iterate over enumerable properties of an object, accessing each product through its key to display comprehensive product information.
+            </p>
+            <h3 class="section-subtitle">Product Catalog</h3>
+            <div id="product-catalog" class="products-grid"></div>
+        </section>
+
+        <section class="iteration-section for-of">
+            <div class="section-header">
+                <h2 class="section-title">SET</h2>
+            </div>
+            <p class="section-description">
+                Iterate through a Set of unique products, ensuring no duplicates while providing direct access to each product object.
+            </p>
+            <h3 class="section-subtitle">Product Set (Unique Products)</h3>
+            <div id="product-set" class="set-products"></div>
+        </section>
+
+        <section class="iteration-section for-each">
+            <div class="section-header">
+                <h2 class="section-title">MAP</h2>
+            </div>
+            <p class="section-description">
+                Execute a callback function for each key-value pair in a Map, organizing product categories with their corresponding identifiers.
+            </p>
+            <h3 class="section-subtitle">Category Mapping</h3>
+            <div id="category-mapping" class="category-mapping"></div>
+        </section>
+    </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
